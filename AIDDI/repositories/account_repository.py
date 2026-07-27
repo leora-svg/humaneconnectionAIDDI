@@ -13,7 +13,7 @@ class AccountRepository:
     ACCOUNT_FILE = "account.json"
 
     def __init__(self):
-        self.root = Path("data/Accounts")
+        self.root = Path(__file__).resolve().parent.parent / "data" / "Accounts"
         self.root.mkdir(parents=True, exist_ok=True)
 
 
