@@ -86,6 +86,9 @@ backgroundColor = "#24AAF3"
 
 showErrorDetails = "none"
 
+[server]
+headless = true
+
 
 [browser]
 
