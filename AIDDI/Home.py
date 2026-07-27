@@ -1,7 +1,7 @@
 import streamlit as st
 from dotenv import load_dotenv
 from pathlib import Path
-from PIL import Image
+# from PIL import Image
 
 from models.access_level import AccessLevel
 from ui.components import sidebar
