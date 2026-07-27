@@ -4,8 +4,9 @@ from repositories.profile_repository import ProfileRepository
 
 from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent.parent
 # --- Paths (Matching Growth Plan Architecture) ---
-DIAGNOSTIC_DIR = Path("data/DiagnosticSummary")
+DIAGNOSTIC_DIR = BASE_DIR / "data" / "DiagnosticSummary"
 OUTPUT_DIR = DIAGNOSTIC_DIR / "Outputs"
 
 # Point to the prompt file living inside the diagnostic directory
