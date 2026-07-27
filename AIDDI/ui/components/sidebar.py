@@ -125,7 +125,7 @@ def show() -> None:
     with st.sidebar:
         _render_sidebar_layout_css()
         
-        logo_path = Path(__file__).parent / "static" / "AIDDIlogopending.png"
+        logo_path = Path(__file__).parent.parent.parent / "static" / "AIDDIlogopending.png"
         st.image(str(logo_path), width=300)
         
         st.markdown("v2026.07")
