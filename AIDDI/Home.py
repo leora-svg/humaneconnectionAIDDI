@@ -6,9 +6,6 @@ from pathlib import Path
 from models.access_level import AccessLevel
 from ui.components import sidebar
 
-from services.playwright_setup import ensure_playwright_browser
-
-ensure_playwright_browser()
 
 if "account" not in st.session_state:
     st.session_state.account = None
