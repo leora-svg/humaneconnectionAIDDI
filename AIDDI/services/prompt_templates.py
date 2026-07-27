@@ -2,7 +2,9 @@ import re
 from pathlib import Path
 from typing import Dict, List
 
-PROMPTS_DIR = Path("data/TeamDiagnostics/Prompts")
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+PROMPTS_DIR = BASE_DIR / "data" / "TeamDiagnostics" / "Prompts"
 SYSTEM_FILENAME = "system_prompt.md"
 OUTPUT_FORMAT_FILENAME = "output_format.md"
 DEFAULT_TEMPLATE = "default"
