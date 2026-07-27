@@ -16,7 +16,9 @@ from models.profile import Profile
 from repositories.profile_repository import ProfileRepository
 from services import prompt_templates
 
-TEAM_DIAGNOSTICS_DIR = Path("data/TeamDiagnostics")
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+TEAM_DIAGNOSTICS_DIR = BASE_DIR / "data" / "TeamDiagnostics"
 INPUT_DIR = TEAM_DIAGNOSTICS_DIR / "Inputs"
 OUTPUT_DIR = TEAM_DIAGNOSTICS_DIR / "Outputs"
 SYSTEM_PROMPT_FILE = TEAM_DIAGNOSTICS_DIR / "team_diagnostics_system_prompt.md"
