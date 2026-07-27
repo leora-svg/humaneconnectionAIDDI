@@ -7,7 +7,9 @@ from models.profile import Profile
 from repositories.profile_repository import ProfileRepository
 from models.document_type import DocumentType
 
-GROWTH_PLAN_DIR = Path("data/GrowthPlan")
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+GROWTH_PLAN_DIR = BASE_DIR / "data" / "GrowthPlan"
 # INPUT_DIR = GROWTH_PLAN_DIR / "Inputs"
 # OUTPUT_DIR = GROWTH_PLAN_DIR / "Outputs"
 PROMPT_FILE = GROWTH_PLAN_DIR / "growth_plan_system_prompt.md"
