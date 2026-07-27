@@ -11,7 +11,9 @@ from typing import List, Optional
 
 from services import prompt_templates, prompts, team_diagnostics
 
-GROWTH_PLAN_SYSTEM_PROMPT = Path("data/GrowthPlan/growth_plan_system_prompt.md")
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+GROWTH_PLAN_SYSTEM_PROMPT = BASE_DIR / "data" / "GrowthPlan" / "growth_plan_system_prompt.md"
 
 FEATURES = (
     "Growth Plan",
