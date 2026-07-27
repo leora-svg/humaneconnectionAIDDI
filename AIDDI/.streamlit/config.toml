@@ -87,11 +87,6 @@ backgroundColor = "#24AAF3"
 showErrorDetails = "none"
 
 
-[server]
-
-headless = false
-
-
 [browser]
 
 gatherUsageStats = false
