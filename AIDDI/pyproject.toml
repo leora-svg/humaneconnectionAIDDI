@@ -1,0 +1,11 @@
+[project]
+name = "humaneconnectionaiddi"
+version = "0.0.1"
+requires-python = ">=3.12"
+
+dependencies = [
+    "streamlit",
+]
+
+[tool.poetry]
+package-mode = false
