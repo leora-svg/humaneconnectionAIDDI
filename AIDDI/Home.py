@@ -6,7 +6,7 @@ from PIL import Image
 from models.access_level import AccessLevel
 from ui.components import sidebar
 
-
+st.write("Home.py started")
 
 if "account" not in st.session_state:
     st.session_state.account = None
