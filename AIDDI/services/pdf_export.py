@@ -3,9 +3,10 @@ import markdown
 import re
 import os
 
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-FONT_PATH = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
-FONT_BOLD_PATH = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+FONT_PATH = os.path.join(BASE_DIR, "assets", "DejaVuSans.ttf")
+FONT_BOLD_PATH = os.path.join(BASE_DIR, "assets", "DejaVuSans-Bold.ttf")
 
 
 class PDF(FPDF):
