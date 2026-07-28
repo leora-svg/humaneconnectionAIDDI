@@ -72,6 +72,7 @@ def markdown_to_pdf(markdown_text: str) -> bytes:
             pdf.ln(3)
             continue
 
+        pdf.set_x(pdf.l_margin)
         pdf.multi_cell(0, 6, line)
 
     output = bytes(pdf.output())
