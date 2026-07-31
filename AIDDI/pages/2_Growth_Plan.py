@@ -3,7 +3,6 @@ from pathlib import Path
 
 import streamlit as st
 
-from ui.components import sidebar
 from ui.interactions import chat_handler
 import services.growth_plan as growth_plan
 from repositories.profile_repository import ProfileRepository
