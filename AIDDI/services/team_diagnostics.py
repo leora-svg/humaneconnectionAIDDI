@@ -13,7 +13,9 @@ from repositories.profile_repository import ProfileRepository
 from repositories.team_diagnostics_repository import TeamDiagnosticsRepository
 from services import prompt_templates
 
-TEAM_DIAGNOSTICS_DIR = Path("data/TeamDiagnostics")
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+TEAM_DIAGNOSTICS_DIR = BASE_DIR / "data" / "TeamDiagnostics"
 SYSTEM_PROMPT_FILE = TEAM_DIAGNOSTICS_DIR / "team_diagnostics_system_prompt.md"
 OUTPUT_FORMAT_FILE = TEAM_DIAGNOSTICS_DIR / "team_diagnostics_output_format.md"
 
