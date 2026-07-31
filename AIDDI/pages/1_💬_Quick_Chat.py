@@ -4,7 +4,6 @@ from pathlib import Path
 import streamlit as st
 
 from services import prompts
-from ui.components import sidebar
 from ui.interactions import chat_handler, book_handler
 
 logo = Path(__file__).resolve().parents[1] / "static" / "AIDDIlogopendingsquare.png"
