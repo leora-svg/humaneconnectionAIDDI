@@ -3,7 +3,6 @@ from pathlib import Path
 
 import streamlit as st
 
-from ui.components import sidebar
 from services import rag_index_manager
 
 logo = Path(__file__).resolve().parents[1] / "static" / "AIDDIlogopendingsquare.png"
